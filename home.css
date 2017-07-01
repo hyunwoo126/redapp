@@ -1,0 +1,104 @@
+body>section{
+    min-height: 300px;
+    padding: 20px;
+}
+
+#home_section_top{
+    position: relative;
+    height: 700px;
+    background-color: #2b2b2b;
+    color: #FFFFFF;
+
+    /* fallback */ 
+    background-color: #2b2b2b;
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2b2b2b), to(#585858));
+     /* Safari 5.1, Chrome 10+ */ 
+    background: -webkit-linear-gradient(top,#2b2b2b, #585858);
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(top, #2b2b2b, #585858); 
+    /* IE 10 */ 
+    background: -ms-linear-gradient(top, #2b2b2b, #585858); 
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(top, #2b2b2b, #585858);
+}
+
+.home_logo_container{
+    position: absolute;
+    left: 0px; right: 0px;
+    top: 42%;
+    -ms-transform: translateY(-50%); /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.home_logo_name{
+    font-size: 50px;
+}
+.home_logo_name_red{
+    color: #a53f3f;
+}
+.home_logo_slogan{
+    font-size: 16px;
+}
+
+/*-----section-----*/
+
+#home_section_1{
+    height: 300px;
+}
+
+#home_section_top_arrow{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#home_section_top_arrow>i{
+    display: block;
+}
+
+.home_stores{
+    border: 1px solid black;
+    width: 100px;
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+}
+
+
+.home_btnSlack{
+    display: inline-block;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.home_btnSlack img{
+    max-height: 100%;
+}
+.home_btnSlack>span{
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50px;
+}
+
+@media (min-width:320px) {
+
+}/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:961px){
+    .home_logo_name{
+        padding: 10px 0px;
+        font-size: 60px;
+    }
+    .home_logo_slogan{
+        font-size: 30px;
+    }
+}/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:1025px){}/* big landscape tablets, laptops, and desktops */
+@media (min-width:1281px){}/* hi-res laptops and desktops */
