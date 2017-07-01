@@ -14,9 +14,9 @@
 
 <style type="text/css">
 </style>
-<body>
+<body class="home_body">
 
-<section id="home_section_top">
+<section id="home_section_top" class="borderBox base_background_greyGrad clickable">
     <div class="home_logo_container">
         <div class="home_logo_name">
             <span class="home_logo_name_red">RED</span>APP
@@ -24,14 +24,33 @@
         <div class="home_logo_slogan">Reach China's 600M mobile users.</div>
     </div>
     <div id="home_section_top_arrow">
+        <div>Click to learn more</div>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
 </section>
 
 <section id="home_section_1">
-    <h3>Why the Chinese market? Why redapp?</h3>
+    <h1>Why the Chinese market? Why redapp?</h1>
+
     <div>
+        <div class="home_market_block">
+            <div class="home_market_fig base_color_red">600M</div>
+            <div>China is expected to break 600 million smartphone users in 2017</div>
+        </div><div class="home_market_block">
+            <div class="home_market_fig base_color_red">26%</div>
+            <div>China makes up 26% of world smartphone users</div>
+        </div><div class="home_market_block">
+            <div class="home_market_fig base_color_red">75%</div>
+            <div>75% of mobile users in China use Android</div>
+        </div>
+    </div>
+
+    
+
+
+
+    <!--<div>
         <a href="https://www.statista.com/statistics/467160/forecast-of-smartphone-users-in-china/">number of smartphone users in China have been growing at a massive pace, and projected to continue</a>
     </div>
     <div>
@@ -42,13 +61,13 @@
         <div>26% (and growing?) of world smartphone users</div>
         http://makingsenseofdiabetes.com/wp-content/uploads/2016/09/statistic_id330695_smartphone-users-worldwide-2014-2019.png
     </div>
-    <div>
+    <div>-->
 
     </div>
 </section>
 
 <section>
-    <h3>Be present at app stores backed by these great Chinese companies</h3>
+    <h1>Be present at app stores backed by these great Chinese companies</h1>
     <div class="home_stores">
         <img src="img/icon-huawei.png"/>
         <div>huawei</div>
@@ -63,22 +82,63 @@
 </section>
 
 <section id="home_section_2">
-    <h3>service packages</h3>
+    <h1>service packages</h1>
 
 </section>
 
+<section id="home_section_3">
+    <h1>SDK integration</h1>
+    <div>Our native Chinese Android and iOS developers can help you integrate some of the most popular Chinese app SDK's to your app.</div>
+    <div>
+        <h4>WeChat</h4>
+        <div>
+            If you want to be where users are in China, you need to be on WeChat. Using WeChat's SDK, you get access to:
+            <ol>
+                <li>Login by WeChat</li>
+                <li>Share customized content to WeChat contacts and Moments</li>
+                <li>Make in-app purchases with WeChat Pay</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <h4>Alipay</h4>
+    </div>
+</section>
+
+
 
 <section id="home_section_contact">
-    <h3>something besides email (slack, whatsapp, wechat)</h3>
-    <a class="home_btnSlack base_background_grey" href="https://join.slack.com/redapp-co/shared_invite/MjA3NDM5NTMyMjE0LTE0OTg4NzU4MDAtN2M2MTc2M2IwOA">
+    <h1>something besides email (slack, whatsapp, wechat)</h1>
+    <center>
+    <a class="home_btnSlack base_background_greyGrad" href="https://join.slack.com/redapp-co/shared_invite/MjA3NDM5NTMyMjE0LTE0OTg4NzU4MDAtN2M2MTc2M2IwOA">
         <img src="img/slack.svg"/>
-        <span class="base_color_white">Join Redapp on Slack!</span>
+        <span>Join Redapp on Slack!</span>
     </a>
+    <br/>
+    <div class="home_contactList">
+        <div>Also find us in</div>
+        <div>WeChat : hyunwoo126</div>
+        <div>Whatsapp : hyunwoo126</div>
+        <div>Skype : hyunwoo126</div>
+        <div>email : hyunwoo126</div>
+    </div>
+    </center>
+    <div class="home_copyright">REDapp 2017</div>
 </section>
 
  <script type="text/javascript">
  window.onload = function(){
-    document.getElementById('home_section_top').style.height = window.innerHeight+'px';
+    var elem_top = document.getElementById('home_section_top');
+    elem_top.style.height = window.innerHeight+'px';
+
+
+    elem_top.onclick = function(){
+        document.getElementById('home_section_1').scrollIntoView(
+            {block: "start", behavior: "smooth"}
+        );
+    }
+
+
  }
  </script>
 </body>
