@@ -21,6 +21,23 @@ div, section,
     box-sizing: border-box;
 }
 
+.base_color_red{
+    color: #a53f3f;
+}
+.base_background_red{
+    background-color: #a53f3f;
+}
+.base_color_grey{
+    color: #2b2b2b;
+}
+.base_background_grey{
+    background-color: #2b2b2b;
+}
+.base_color_white{
+    color: #FFFFFF;
+}
+
+
 @media (min-width:320px) {}/* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */

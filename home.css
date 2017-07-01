@@ -65,25 +65,27 @@ body>section{
     border: 1px solid black;
     width: 100px;
     display: inline-block;
-    height: 100px;
     text-align: center;
+}
+.home_stores img{
+    height: 100px; width: 100px;
 }
 
 
 .home_btnSlack{
     display: inline-block;
-    height: 50px;
-    border: 1px solid black;
+    height: 30px;
     border-radius: 4px;
+    padding: 10px;
 }
 .home_btnSlack img{
     max-height: 100%;
 }
 .home_btnSlack>span{
-    height: 50px;
+    height: 100%;
     display: inline-block;
     vertical-align: top;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 @media (min-width:320px) {
