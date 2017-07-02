@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>REDAPP.CO | Reach China's 600M mobile users</title>
+<script src="https://use.fontawesome.com/7d18d79adf.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">-->
 <meta name="description" content="">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="home.css">
 </head>
@@ -15,6 +15,8 @@
 <style type="text/css">
 </style>
 <body class="home_body">
+
+
 
 <section id="home_section_top" class="borderBox base_background_greyGrad clickable">
     <div class="home_logo_container">
@@ -126,20 +128,27 @@
     <div class="home_copyright">REDapp 2017</div>
 </section>
 
+
+
  <script type="text/javascript">
- window.onload = function(){
+ //function to run on DOM ready
+ (function(){
     var elem_top = document.getElementById('home_section_top');
     elem_top.style.height = window.innerHeight+'px';
 
 
     elem_top.onclick = function(){
-        document.getElementById('home_section_1').scrollIntoView(
-            {block: "start", behavior: "smooth"}
-        );
+        var elem =  document.getElementById('home_section_1');
+
+        if(typeof Velocity != 'undefined'){
+            Velocity(elem, "scroll", { duration: 1500, easing: "spring" });
+            Velocity(elem, { opacity: 1 });
+        }
+        
     }
 
-
- }
+ })();
  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 </body>
 </html>
