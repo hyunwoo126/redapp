@@ -35,6 +35,20 @@ body{
     background: -o-linear-gradient(top, #2b2b2b 40%, #585858);
 }
 
+.base_background_greyGrad_L{
+    /* fallback */ 
+    background-color: #eeeeee;
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#F8F8FF));
+     /* Safari 5.1, Chrome 10+ */ 
+    background: -webkit-linear-gradient(top,#eeeeee 40%, #F8F8FF);
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(top, #eeeeee 40%, #F8F8FF); 
+    /* IE 10 */ 
+    background: -ms-linear-gradient(top, #eeeeee 40%, #F8F8FF); 
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(top, #eeeeee 40%, #F8F8FF);
+}
 
 .borderBox{
     -webkit-box-sizing: border-box;
@@ -44,6 +58,7 @@ body{
 
 .base_color_red{
     color: #a53f3f !important;
+    color: #ff4343 !important;
 }
 .base_background_red{
     background-color: #a53f3f !important;

@@ -10,7 +10,9 @@
     position: relative;
     height: 700px;
     color: #FFFFFF;
+    color: #3f3f3f;
     border-bottom: 4px solid #a53f3f;
+    border-color: #ff4343;
 }
 
 .home_logo_container{
@@ -28,10 +30,12 @@
 }
 .home_logo_name_red{
     color: #a53f3f;
+    color: #ff4343;
 }
 .home_logo_slogan{
     font-style: italic;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 /*-----section-----*/
@@ -44,19 +48,25 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    border: 1px solid #e4e4e4;
+    /*border: 1px solid #e4e4e4;*/
     box-sizing: border-box;
     vertical-align: top;
+    padding: 4px;
 }
 .home_market_fig{
-    font-size: 40px;
+    font-size: 46px;
     font-weight: 600;
-    height: 120px;
+    height: 80px;
+    line-height: 80px;
     width: 120px;
-    line-height: 120px;
     margin: 0 auto;
     border: 4px solid #a53f3f;
     border-radius: 500px;
+
+    border: none;
+}
+.home_market_fig .fa-stack{
+    font-size: 0.5em;
 }
 
 #home_section_top_arrow{
@@ -80,6 +90,17 @@
 }
 .home_stores img{
     height: 100px; width: 100px;
+}
+
+
+
+.home_packages_table{
+    border: 1px solid grey;
+    text-align: center;
+}
+.home_packages_table td{
+    padding: 2px;
+    border: 1px solid black;
 }
 
 
@@ -145,6 +166,12 @@
     }
     .home_market_block{
         width: 300px;
+    }
+    .home_market_fig{
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+        font-size: 80px;
     }
 }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:961px){

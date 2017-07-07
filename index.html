@@ -4,12 +4,13 @@
 <title>REDAPP.CO | Reach China's 600M mobile users</title>
 <script src="https://use.fontawesome.com/7d18d79adf.js"></script>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name=viewport content="width=device-width, initial-scale=1">
 <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">-->
 <meta name="description" content="">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 </head>
 
 <style type="text/css">
@@ -18,12 +19,39 @@
 
 
 
-<section id="home_section_top" class="borderBox base_background_greyGrad clickable">
+<section id="home_section_top" class="borderBox base_background_greyGrad_L clickable">
     <div class="home_logo_container">
         <div class="home_logo_name">
             <span class="home_logo_name_red">RED</span>APP
         </div>
         <div class="home_logo_slogan">Reach China's 600M mobile users.</div>
+
+
+        <div class="home_market_block">
+            <div class="home_market_fig base_color_red">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
+            <div>China will break <strong>600 million</strong> smartphone users in 2017</div>
+        </div><div class="home_market_block">
+            <div class="home_market_fig base_color_red">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <div>China makes up <strong>26%</strong> of world smartphone users</div>
+        </div><div class="home_market_block">
+            <div class="home_market_fig base_color_red">
+                <i class="fa fa-android" aria-hidden="true"></i>
+            </div>
+            <div><strong>75%</strong> of mobile users in China use Android</div>
+        </div><div class="home_market_block">
+            <div class="home_market_fig base_color_red">
+                <span class="fa-stack">
+                    <i class="fa fa-ban fa-stack-2x"></i>
+                    <i class="fa fa-google fa-stack-1x base_color_grey"></i>
+                    
+                </span>
+            </div>
+            <div><strong>Google Play</strong> is not blocked in China.</div>
+        </div>
     </div>
     <div id="home_section_top_arrow">
         <div>Click to learn more</div>
@@ -32,27 +60,8 @@
     </div>
 </section>
 
-<section id="home_section_1">
-    <h1>Why the Chinese market? Why redapp?</h1>
-
+<!--<section>
     <div>
-        <div class="home_market_block">
-            <div class="home_market_fig base_color_red">600M</div>
-            <div>China is expected to break 600 million smartphone users in 2017</div>
-        </div><div class="home_market_block">
-            <div class="home_market_fig base_color_red">26%</div>
-            <div>China makes up 26% of world smartphone users</div>
-        </div><div class="home_market_block">
-            <div class="home_market_fig base_color_red">75%</div>
-            <div>75% of mobile users in China use Android</div>
-        </div>
-    </div>
-
-    
-
-
-
-    <!--<div>
         <a href="https://www.statista.com/statistics/467160/forecast-of-smartphone-users-in-china/">number of smartphone users in China have been growing at a massive pace, and projected to continue</a>
     </div>
     <div>
@@ -63,12 +72,9 @@
         <div>26% (and growing?) of world smartphone users</div>
         http://makingsenseofdiabetes.com/wp-content/uploads/2016/09/statistic_id330695_smartphone-users-worldwide-2014-2019.png
     </div>
-    <div>-->
+</section>-->
 
-    </div>
-</section>
-
-<section>
+<section id="home_section_1">
     <h1>Be present at app stores backed by these great Chinese companies</h1>
     <div class="home_stores">
         <img src="img/icon-huawei.png"/>
@@ -78,14 +84,48 @@
         <img src="img/icon-xiaomi.png"/>
         <div>xiaomi</div>
     </div>
-    <div class="home_stores">oppo</div>
-    <div class="home_stores">alibaba</div>
-    <div class="home_stores">baidu</div>
+    <div class="home_stores">tencent</div>
+    <div class="home_stores">360</div>
+    <div class="home_stores">Baidu</div>
+    <div class="home_stores">Alibaba</div>
+    <div class="home_stores">Oppo</div>
+    <div class="home_stores">Lenovo</div>
+    <div class="home_stores">Meizu</div>
+    <div class="home_stores">Anzhi</div>
 </section>
 
 <section id="home_section_2">
     <h1>service packages</h1>
-
+    <table class="home_packages_table">
+        <tbody>
+            <tr>
+                <td>Annual Subscription</td>
+                <td>Quater Subscription</td>
+                <td>One-time Publishing</td>
+            </tr>
+            <tr>
+                <td>2,000 USD / year<br/>
+                    13,600 RMB / year
+                </td>
+                <td>600 USD / year<br/>
+                    4,100 RMB / year
+                </td>
+                <td>60 USD / store<br/>
+                    410 RMB / store
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>1 - 10</td>
+            </tr>
+            <tr>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <section id="home_section_3">
@@ -125,7 +165,7 @@
         <div>email : hyunwoo126</div>
     </div>
     </center>
-    <div class="home_copyright">REDapp 2017</div>
+    <div class="home_copyright">©️ Redapp 2017</div>
 </section>
 
 
@@ -138,7 +178,8 @@
 
 
     elem_top.onclick = function(){
-        var elem =  document.getElementById('home_section_1');
+        //var elem = document.getElementById('home_section_1');
+        var elem = this.nextElementSibling;
 
         if(typeof Velocity != 'undefined'){
             Velocity(elem, "scroll", { duration: 500, easing: "quadratic" });
