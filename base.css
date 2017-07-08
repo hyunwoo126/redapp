@@ -15,10 +15,9 @@ body{
     color: #2b2b2b;
 }
 
-.clickable{
-    cursor: pointer; cursor: hand;
-}
-
+.clickable{cursor: pointer; cursor: hand;}
+.display_none{display: none !important;}
+.text_align_left{text-align:left;}
 
 .base_background_greyGrad{
     /* fallback */ 
@@ -37,17 +36,17 @@ body{
 
 .base_background_greyGrad_L{
     /* fallback */ 
-    background-color: #eeeeee;
+    background-color: #eeeef4;
     /* Safari 4-5, Chrome 1-9 */ 
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#F8F8FF));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeef4), to(#F8F8FF));
      /* Safari 5.1, Chrome 10+ */ 
-    background: -webkit-linear-gradient(top,#eeeeee 40%, #F8F8FF);
+    background: -webkit-linear-gradient(top,#eeeef4 30%, #F8F8FF);
     /* Firefox 3.6+ */ 
-    background: -moz-linear-gradient(top, #eeeeee 40%, #F8F8FF); 
+    background: -moz-linear-gradient(top, #eeeef4 30%, #F8F8FF); 
     /* IE 10 */ 
-    background: -ms-linear-gradient(top, #eeeeee 40%, #F8F8FF); 
+    background: -ms-linear-gradient(top, #eeeef4 30%, #F8F8FF); 
     /* Opera 11.10+ */ 
-    background: -o-linear-gradient(top, #eeeeee 40%, #F8F8FF);
+    background: -o-linear-gradient(top, #eeeef4 30%, #F8F8FF);
 }
 
 .borderBox{
@@ -75,8 +74,17 @@ body{
 
 
 @media (min-width:320px) {}/* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:375px) {}/* iPhone 6 portrait */
+@media (min-width:481px){
+    .maxMobileL{
+        display: none;
+    }
+}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px){
+    .maxTabletL{
+        display: none;
+    }
+}/* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1025px){}/* big landscape tablets, laptops, and desktops */
 @media (min-width:1281px){}/* hi-res laptops and desktops */
