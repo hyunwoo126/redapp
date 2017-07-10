@@ -4,6 +4,7 @@
 }
 .home_body>section>h1{
     text-align: center;
+    text-transform: capitalize;
 }
 
 #home_section_top{
@@ -116,7 +117,7 @@
     display: inline-block;
 }
 .home_package_column{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     vertical-align: top;
     white-space: normal;
@@ -126,7 +127,7 @@
     position: relative;
     height: 54px; line-height: 54px;
     border-bottom: 1px solid #adadad;
-    padding: 10px;
+    padding: 10px 4px;
 }
 .home_package_column.minTablet{
     display: none;
@@ -137,7 +138,7 @@
     line-height: 27px;
 }
 .home_package_column > .home_package_row1{
-    height: 30px; line-height: 30px;
+    height: auto; line-height: 30px;
     font-weight: bold;
     background-color: #ffe1e1;
 }
@@ -157,7 +158,16 @@
 .home_package_column .fa-times{
     color: red;
 }
-
+.home_package_fontLarger{
+    font-size: 1.3em;
+}
+.home_package_deposit{
+    padding: 4px;
+    max-width: 800px;
+    white-space: normal;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .home_btnSlack{
     display: inline-block;
@@ -195,6 +205,7 @@
     margin: 20px 0px;
     opacity: 0.6;
     font-size: 14px;
+    letter-spacing: 0.1em;
 }
 
 .home_copyright{
@@ -232,9 +243,15 @@
         width: 120px;
         line-height: 120px;
         font-size: 80px;
-    }    
+    }
+    .home_package_column{
+        font-size: 20px;
+    }
 }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:961px){
+    .home_package_container{
+        min-width: 800px;
+    }
     .home_stores{
         width: 120px;
     }
@@ -242,6 +259,9 @@
         border-radius: 4px;
         overflow: hidden;
         display: inline-block !important;
+    }
+    .home_package_column > .home_package_row1{
+        padding: 10px 20px;
     }
 }/* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1025px){}/* big landscape tablets, laptops, and desktops */
