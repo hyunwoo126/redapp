@@ -113,6 +113,7 @@
     overflow: hidden;
     white-space: nowrap;
     border-radius: 8px;
+    display: inline-block;
 }
 .home_package_column{
     font-size: 20px;
@@ -201,6 +202,7 @@
     left: 0px; right: 0px; bottom: 0px;
     text-align: center;
     padding: 8px 0px;
+    letter-spacing: 1px;
 }
 
 @media (min-width:320px) {}/* smartphones, iPhone, portrait 480x320 phones */
