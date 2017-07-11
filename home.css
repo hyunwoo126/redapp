@@ -1,5 +1,5 @@
 .home_body>section{
-    padding: 20px;
+    padding: 5px;
     text-align:center;
 }
 .home_body>section>h1{
@@ -84,6 +84,7 @@
 }
 .home_stores_row{
     display: inline-block;
+    padding: 0px 10px;
 }
 .home_stores{
     position: relative;
@@ -101,10 +102,13 @@
 }
 .home_stores_nameAlt{
     position: absolute;
-    left: 0;
+    padding: 0px !important;
+    left: 0px;
     right: 0px;
-    bottom: -20px;
+    bottom: -6px;
     font-size: 12px;
+    white-space: nowrap;
+    overflow: visible;
 }
 .home_stores_nameAlt:before{ content: '('; }
 .home_stores_nameAlt:after{ content: ')'; }
@@ -122,10 +126,10 @@
     vertical-align: top;
     white-space: normal;
     background-color: rgba(189, 189, 189, 0.15);
+    margin: 10px 0px;
 }
 .home_package_column > div{
     position: relative;
-    height: 54px; line-height: 54px;
     border-bottom: 1px solid #adadad;
     padding: 10px 4px;
 }
@@ -218,6 +222,9 @@
 
 @media (min-width:320px) {}/* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:375px) {
+    .home_body>section{
+        padding: 10px;
+    }
     .home_stores{
          width: 100px;
     }
@@ -259,6 +266,9 @@
         border-radius: 4px;
         overflow: hidden;
         display: inline-block !important;
+    }
+    .home_package_column > div{
+        height: 54px; line-height: 54px;
     }
     .home_package_column > .home_package_row1{
         padding: 10px 20px;
