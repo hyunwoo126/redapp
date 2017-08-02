@@ -121,7 +121,7 @@
 
 
 .home_package_container{
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     border-radius: 8px;
     display: inline-block;

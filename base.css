@@ -10,7 +10,7 @@ html{
 body{
     position: relative;
     margin: 0px;
-    font-family: Roboto, arial;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, arial, sans-serif;
     background-color: #ECEFF1;
     color: #2b2b2b;
 }
