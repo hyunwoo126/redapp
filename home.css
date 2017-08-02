@@ -5,15 +5,20 @@
 .home_body>section>h1{
     text-align: center;
     text-transform: capitalize;
+    margin: 10px 0px;
+}
+
+.home_headerDiv{
+    height: 6px;
+    width: 20%;
+    min-width: 200px;
+    display: block;
+    margin: 14px auto 20px auto;
 }
 
 #home_section_top{
     position: relative;
     height: 700px;
-    color: #FFFFFF;
-    color: #3f3f3f;
-    border-bottom: 4px solid #a53f3f;
-    border-color: #ff4343;
 }
 
 .home_logo_container{
@@ -28,7 +33,7 @@
 
 .home_logo_name{
     font-size: 50px;
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .home_logo_name_red{
     color: #a53f3f;
@@ -41,10 +46,6 @@
 }
 
 /*-----section-----*/
-
-#home_section_1 > h1{
-    padding-bottom: 20px;
-}
 
 .home_market_block{
     display: inline-block;
@@ -73,11 +74,16 @@
 
 #home_section_top_arrow{
     position: absolute;
-    bottom: 0px;
     left: 0px;
     right: 0px;
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-radius: 6px;
+    padding: 10px;
+    bottom: 34px;
+    font-size: 22px;
+    width: 200px;
 }
 #home_section_top_arrow>i{
     display: block;
@@ -125,8 +131,11 @@
     text-align: center;
     vertical-align: top;
     white-space: normal;
-    background-color: rgba(189, 189, 189, 0.15);
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
     margin: 10px 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /*level 2*/
 }
 .home_package_column > div{
     position: relative;
@@ -144,7 +153,8 @@
 .home_package_column > .home_package_row1{
     height: auto; line-height: 30px;
     font-weight: bold;
-    background-color: #ffe1e1;
+    background-color: #EF5350;
+    color: #FFFFFF;
 }
 .home_package_rmb{
     font-size: 14px;
@@ -196,11 +206,18 @@
     line-height: 30px;
 }
 
+#home_section_sdk .home_package_normal{
+    line-height: normal;
+    height: auto;
+    text-align: left;
+    padding: 28px;
+}
+
 
 
 #home_section_contact{
-    background-color: #652b2b;
-    color: #e6e6e6;
+    background-color: #263238;
+    color: #ECEFF1;
 }
 
 .home_contactList{
@@ -222,9 +239,6 @@
 
 @media (min-width:320px) {}/* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:375px) {
-    .home_body>section{
-        padding: 10px;
-    }
     .home_stores{
          width: 100px;
     }
@@ -242,6 +256,21 @@
         font-size: 30px;
         margin-bottom: 40px;
     }
+
+    .home_body>section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .home_body>section>h1{
+        font-size: 28px;
+    }
+
+    #home_section_top_arrow{
+        font-size: 30px;
+        bottom: 120px;
+        width: 240px;
+    }
+
     .home_market_block{
         width: 300px;
     }
@@ -263,8 +292,6 @@
         width: 120px;
     }
     .home_package_column{
-        border-radius: 4px;
-        overflow: hidden;
         display: inline-block !important;
     }
     .home_package_column > div{
