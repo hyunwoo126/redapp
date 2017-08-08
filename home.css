@@ -213,6 +213,70 @@
     padding: 28px;
 }
 
+#home_cta_email, #home_cta_btn{
+    display: block;
+    margin: 0px auto 20px auto;
+    width: 80%;
+    font-size: 20px;
+    border: 0px;
+    padding: 4px 10px;
+}
+#home_cta_email{
+    border: 1px solid transparent;
+}
+#home_cta_btn{
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+#home_cta_btn:active{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+}
+
+.home_cta_invalidEmail #home_cta_email{
+    border: 1px solid red;
+}
+.home_cta_validEmail #home_cta_email{
+    border: 1px solid green;
+}
+
+.home_cta_form{
+    position: relative;
+    padding: 10px 0px;
+}
+.home_cta_form:before{
+    content: "\00a0"; /*&nbsp;*/
+    text-align: left;
+    display: block;
+    margin: auto;
+    width: 80%;
+    font-size: 14px;
+    padding: 2px 8px;
+}
+.home_cta_invalidEmail .home_cta_form:before{
+    content: 'Invalid email';
+    color: red;
+}
+.home_cta_validEmail .home_cta_form:before{
+    content: 'Valid email';
+    color: green;
+}
+
+
+.home_cta_loading .home_cta_msg_loading{
+    display: block;
+}
+.home_cta_success .home_cta_msg_success{
+    display: block;
+}
+.home_cta_msg_loading, .home_cta_msg_success,
+.home_cta_loading .home_cta_msg_ready, .home_cta_success .home_cta_msg_ready,
+.home_cta_success .home_cta_msg_loading{
+    display: none;
+}
+
+.home_cta_loading .home_cta_form, .home_cta_success .home_cta_form{
+    visibility: hidden;
+}
 
 
 #home_section_contact{
