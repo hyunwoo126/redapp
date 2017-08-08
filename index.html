@@ -262,6 +262,9 @@ function resize(){
             Velocity(elem, "scroll", { duration: 500, easing: "quadratic" });
             Velocity(elem, { opacity: 1 });
         }
+        else if(typeof $.Velocity != 'undefined'){
+            $(elem).velocity("scroll", { duration: 500, easing: "quadratic" }).velocity({opacity: 1});
+        }
         
     }
 
