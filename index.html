@@ -217,7 +217,10 @@
     <div class="home_cta_msg_success">Thank you and we will get back to you soon.</div>
 
     <div class="home_cta_form">
+        <div class="home_cta_form_tag">Email (required): </div>
         <input id="home_cta_email" type="text" placeholder="Place your email here..."/>
+        <div class="home_cta_form_tag">Comments (optional): </div>
+        <textarea id="home_cta_comments" placeholder="Tell us which services you are interested!"></textarea>
         <button id="home_cta_btn" class="base_boxshadow_3 base_background_red_grad_V">send</button>
     </div>
 </section>
@@ -285,13 +288,14 @@ function resize(){
 
     function submit_cta(){
         var email = document.getElementById('home_cta_email');
+        var comments = document.getElementById('home_cta_comments');
         
         if(validateEmail(email.value)){
             $('#home_section_cta').addClass('home_cta_loading');
             var data = {
                 email: email.value,
+                comments: comments.value,
             };
-            console.log(JSON.stringify(data));
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.send(JSON.stringify(data)); 
         } else {
