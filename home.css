@@ -213,44 +213,7 @@
     padding: 28px;
 }
 
-.home_cta_form{
-    position: relative;
-    padding: 10px 20px;
-}
-.home_cta_form > *{
-    resize: none;
-    display: block;
-    margin: 0px auto 20px auto;
-    font-size: 20px;
-    border: 0px;
-    padding: 4px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: inherit;
-}
-.home_cta_form_tag{
-    margin: 0px;
-    text-align: left;
-    font-size: 14px;
-}
-#home_cta_email, #home_cta_comments{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#home_cta_email:focus, #home_cta_comments:focus{
-    outline: none;
-}
-#home_cta_email{
-    border: 1px solid transparent;
-    border-bottom: 2px solid #F44336;
-}
-#home_cta_comments{
-    height: 100px;
-    opacity: 0.7;
-}
-#home_cta_comments:focus{
-    opacity: 1;
-}
+
 #home_cta_btn{
     color: #FFFFFF;
     text-transform: uppercase;
@@ -271,11 +234,11 @@
     border-color: green;
 }
 .home_cta_form:before{
+    width: auto;
     content: "\00a0"; /*&nbsp;*/
     text-align: left;
     display: block;
     margin: auto;
-    width: 80%;
     font-size: 14px;
     padding: 2px 8px;
     font: normal normal normal 14px/1 FontAwesome;
@@ -310,6 +273,108 @@
 .home_cta_loading .home_cta_form, .home_cta_success .home_cta_form{
     visibility: hidden;
 }
+
+
+#home_reclaim_currentStore,
+#home_reclaim_output [find="output_stores_exact"],
+#home_reclaim_output [find="output_stores_contain"]{
+    text-transform: capitalize;
+}
+.home_reclaim_inputContainer{
+    display: none;
+}
+.home_reclaim_inputMsg{
+    padding: 10px 20px 20px 20px;
+}
+#home_reclaim_input_appName, #home_reclaim_btn_search{
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+#home_reclaim_input_appName{
+    border-bottom: 2px solid #F44336;
+    outline: none;
+    opacity: 0.5;
+}
+#home_reclaim_input_appName:focus{
+    opacity: 1;
+}
+#home_reclaim_btn_search{
+    background-color: #F44336;
+    color: #FFFFFF;
+}
+#home_reclaim_currentStore{
+    font-weight: bold;
+}
+#home_section_reclaim[status="ready"] .home_reclaim_inputContainer{
+    display: block;
+}
+#home_reclaim_output{
+    display: none;
+}
+#home_section_reclaim[status="done"] #home_reclaim_output{
+    display: block;
+}
+.home_reclaim_loading{
+    display: none;
+}
+#home_section_reclaim[status="loading"] .home_reclaim_loading{
+    display: block;
+}
+
+
+.home_form_reclaim_tag_email:before{
+    width: auto;
+    content: "\00a0";
+    text-align: left;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.base_form[email="valid"] .home_form_reclaim_tag_email:before{
+    content: '\f0e0 \00a0 Valid email';
+    color: green;
+}
+.base_form[email="invalid"] .home_form_reclaim_tag_email:before{
+    content: '\f06a \00a0 Invalid email';
+    color: #F44336;
+}
+.base_form[email="invalid"] #home_reclaim_email{
+    border-color: #F44336;
+}
+.base_form[email="valid"] #home_reclaim_email{
+    border-color: green;
+}
+
+#home_reclaim_btn {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+.base_form[email="valid"] #home_reclaim_btn{
+    opacity: 1;
+}
+#home_reclaim_btn:active{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+}
+.home_reclaim_msg_loading,
+.home_reclaim_msg_sent{
+    display: none;
+}
+#home_form_reclaim[status="loading"]>*,
+#home_form_reclaim[status="sent"]>*{
+    display: none;
+}
+#home_form_reclaim[status="loading"] .home_reclaim_msg_loading,
+#home_form_reclaim[status="sent"] .home_reclaim_msg_sent{
+    display: block;
+}
+
 
 
 #home_section_contact{
@@ -381,13 +446,6 @@
         font-size: 20px;
     }
 
-    .home_cta_form{
-        display: inline-block;
-        width: 580px;
-    }
-    .home_cta_form:before{
-        width: auto;
-    }
 }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:961px){
     .home_package_container{

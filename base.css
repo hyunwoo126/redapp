@@ -19,6 +19,51 @@ body{
 .display_none{display: none !important;}
 .text_align_left{text-align:left;}
 
+
+.base_form{
+    position: relative;
+    padding: 10px 20px;
+}
+.base_form > * {
+    resize: none;
+    display: block;
+    margin: 0px auto 20px auto;
+    font-size: 20px;
+    border: 0px;
+    padding: 4px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.base_form input,
+.base_form textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+}
+.base_form_primary{
+    border: 1px solid transparent;
+    border-bottom: 2px solid #F44336;
+}
+.base_form_optional{
+    opacity: 0.7;
+}
+.base_form_optional:focus{
+    opacity: 1;
+}
+.base_form_tag{
+    margin: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+@media (min-width: 641px){
+.base_form {
+    display: inline-block;
+    width: 580px;
+}
+}
+
+
 .base_background_red_grad{
     background: #f44336; /* Old browsers */
     background: -moz-linear-gradient(-14deg, #f44336 52%, #e53935 52%); /* FF3.6-15 */
