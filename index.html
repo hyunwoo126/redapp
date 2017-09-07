@@ -233,7 +233,6 @@
                 Your apps may already be on Chinese app stores without you knowing.
                 Try the search below.
             </div>
-            </div>
             <input id="home_reclaim_input_appName" type="text" class="base_boxshadow_1" value="WeChat"/>
             <button id="home_reclaim_btn_search" class="base_boxshadow_1">
                 <i class="fa fa-search"></i>
@@ -475,8 +474,8 @@ var search = {
 
         $.each(search.stores, function(i, store){
             $.post(
-                //"http://localhost:5000/scrape",
-                "https://fast-taiga-21103.herokuapp.com/scrape",
+                "http://localhost:5000/scrape",
+                //"https://fast-taiga-21103.herokuapp.com/scrape",
                 {
                     appName: appName,
                     store: store,
