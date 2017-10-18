@@ -4,6 +4,7 @@ html, body{
 }
 
 html{
+    height: 100%;
     box-sizing: inherit;
 }
 
@@ -19,6 +20,17 @@ body{
 .display_none{display: none !important;}
 .text_align_left{text-align:left;}
 
+
+.base_logo_name{
+    font-size: 50px;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.base_logo_slogan{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 .base_form{
     position: relative;
@@ -37,6 +49,7 @@ body{
 }
 .base_form input,
 .base_form textarea{
+    font-family: inherit;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none;
@@ -62,7 +75,6 @@ body{
     width: 580px;
 }
 }
-
 
 .base_background_red_grad{
     background: #f44336; /* Old browsers */
@@ -120,7 +132,7 @@ body{
     color: #ff4343 !important;
 }
 .base_background_red{
-    background-color: #a53f3f !important;
+    background-color: #f44336 !important;
 }
 .base_color_grey{
     color: #2b2b2b !important;
